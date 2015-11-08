@@ -1,9 +1,9 @@
-Docmentul de Proiectare a Solutiei Aplicatiei Software
+				Docmentul de Proiectare a Solutiei Aplicatiei Software
 					(Software Design Document)
 						03.11.2015
 
 
-	Joc ÑCaruselul literelorî cu suport Android
+	Joc ‚ÄûCaruselul literelor‚Äù cu suport Android
 
 
 TODO: Cuprins
@@ -69,10 +69,10 @@ TODO: Cuprins
 2. Continutul documentului
 
 Documentul este format din 4 sectiuni esentiale:
-* Modelul datelor ñ prezinta principalele structuri de date folosite
-* Modelul arhitectural si modelul componentelor ñ prezinta sabloanele arhitecturale folosite, arhitectura sistemului si descrie componentele arhitecturii
-* Modelul intrfetei cu utilizatorul ñ prezinta interfata cu utilizatorul si succesiune ferestrelor acesteia
-* Elemente de testare ñ prezinta componentele critice si alternative de proiectare a acestora
+* Modelul datelor ‚Äì prezinta principalele structuri de date folosite
+* Modelul arhitectural si modelul componentelor ‚Äì prezinta sabloanele arhitecturale folosite, arhitectura sistemului si descrie componentele arhitecturii
+* Modelul intrfetei cu utilizatorul ‚Äì prezinta interfata cu utilizatorul si succesiune ferestrelor acesteia
+* Elemente de testare ‚Äì prezinta componentele critice si alternative de proiectare a acestora
 
 3. Modelul datelor
 
@@ -81,7 +81,7 @@ TODO : request existing implementation for the app
 
 4. Arhitectura sistemului
 
-   Proiectul Caruselul literelor va fi dezvoltat (TODO mediul de dezvoltare ñ ex: Google Android Development Kit for Java si va fi implementat folosit Java pentru partea de back-end si HTML + CSS pentru partea de front-end.
+   Proiectul Caruselul literelor va fi dezvoltat (TODO mediul de dezvoltare ‚Äì ex: Google Android Development Kit for Java si va fi implementat folosit Java pentru partea de back-end si HTML + CSS pentru partea de front-end.
 
 4.1 Diagrama de arhitectura
 
@@ -106,7 +106,7 @@ TODO
 
 6.1 Componente critice
 
-		Modul de verificare si validare al cuvantului introdus de utilizator in 	urma afisarii literelor pe ecran are o influenta decisiva asupra performantei 	globale a aplicatiei, alturi de verificarea ca pe ecra vor exista cel putin 4 	litere din care user-ul va putea forma un cuvant acceptat de dictionar. De 	asemenea, o componenta foarte importanta este dictionarul folosit pentru 	validarea cuvantulelor introduse. Marirea acestuia poate atrage dupa sine 	scaderi ale perfomantei generale a aplicatiei.
+	Modul de verificare si validare al cuvantului introdus de utilizator in urma afisarii literelor pe ecran are o influenta decisiva asupra performantei globale a aplicatiei, alturi de verificarea ca pe ecra vor exista cel putin 4 litere din care user-ul va putea forma un cuvant acceptat de dictionar. De asemenea, o componenta foarte importanta este dictionarul folosit pentru validarea cuvantulelor introduse. Marirea acestuia poate atrage dupa sine scaderi ale perfomantei generale a aplicatiei.
 
 6.2 Alternative
 
