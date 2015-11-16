@@ -1,0 +1,128 @@
+===========================================================
+<CCR>,<341C2>
+===========================================================
+					>>MPS<<
+					
+					
+				   -Project 1-
+
+				  
+				  |Merry Go Round|
+
+===========================================================
+
+1. Interfatare
+2. Structuri de date (brief)
+3. Implementare (brief)
+4. Resurse
+5. Alte detalii
+
+===========================================================
+*1. Interfatare:
+*
+* Interfata foarte simplista : 4 ecrane
+*
+* eI) splash art la load time care tine 2sec si dispare,
+*     incarcandu-se eII automat.
+* 
+* eII) meniu cu 2 butoane : single player si statistici
+*      single player button -> duce la eIII
+*	   statistics -> duce la eIV
+* 
+* eIII) 3 textView-uri : 
+*			-unul pentru afisarea textului informativ
+*			-unul pentru afisarea timpului ramas
+*			-unul pentru afisarea cuvantului ce este editat de utilizator
+*			
+*		9 + 2 butoane : 
+*			-9 ImageButton(s) pentru cele 9 litere
+*			-un buton OK pentru introducerea/verificarea cuvantului
+*			-un buton DEL pentru a sterge cate o litera din cuvantul introdus
+*
+* eIV) *ONGOING*
+*
+*
+*
+===========================================================
+|2. Structuri de date (brief):
+| \______________________________________________________________________________________/|
+| 
+| *foarte pe scurt , singurele structuri de date importante*
+|
+|	HashMap<String,Integer> <---> dictionarul cu care se face verificarea cuvintelor
+|
+|	Letter 					<---> contine un string si o pereche de (ImageButton,resid)
+|								  pentru definirea si corelarea cu resursa corespunzatoare
+|								  imaginii pentru o litera
+|
+|	Dice					<---> "zarul" din cerinta ce poate avea una din cele 9 forme
+|								  indicate . Folositor pentru a genera random o litera
+|								  tinand cont de dispersia ceruta in cerinta .
+| 
+| /______________________________________________________________________________________\|
+   
+===========================================================
+3. Implementare (brief):
+*
+*  *nu are sens sa vorbesc despre altceva inafara implementarii GameActivity-ului , 
+*				fiind singurul element de interes *
+*
+*
+*	In primul rand mentionez faptul ca am trunchiat fisierul cu cele 600k+ cuvinte
+*   disponibil pe dex.ro . Am scos cuvintele cu lungime <4 si >9 pentru ca acelea nu 
+*	erau de interes(asta am facut-o printr-un strip.cpp pe care il pot pune la dispozitie
+*	la nevoie, insa nu cred ca va fi cazul) . Apoi acel fisier l-am spart in mai multe deoarece
+*	un fisier din /res/raw nu poate avea dimensiune mai mare de 1MB , asa ca au rezultat 3 fisiere
+*	(words_i , i=0,1,2). Am parsat fisierele , bagand toate cuvinte intr-un HashMap .
+*	
+*	Am facut alte initializari ce trebuiau facute (butoane,onClickListeners etc) .
+*
+*	Am folosit un CountDownTimer pentru a tine evidenta timpului (l-am setat sa numere 46 de secunde,
+*	generand "o intrerupere" la fiecare secunda + o "intrerupere speciala" dupa expirarea celor 46 de secunde) . 
+*	
+*	Am impartit jocul in 4 etape : ready,started,ended,replay .
+*
+*	onClickListener-ul butonului de OK are implementari pentru fiecare din cele 4 etape (in ready se fac initializari,
+*	in started se face verificarea cuvantului , in ended afisarea scorului si in replay pregatirea pentru reintrarea in
+*	ready) . 
+*
+*	Alte chestii ce merita mentionate (poate) : vector in care retin cuvintele ghicite , scorul creste dupa o regula simpla:
+*	length(word) = 4 / 5 : +4 pct
+*	length(word) = 6 / 7 : +7 pct
+*	length(word) = 8 / 9 : +15 / 17 pct
+*
+*
+===========================================================
+|4.Resurse:								          |
+|
+| Pozele folosite pentru ImageButton-urile cu litere sunt luate de pe https://www.flickr.com/photos/lwr/collections/72157594587080023/
+|
+| SplashArt-ul de pe primul ecran ii apartine unui prieten si este modificat de mine
+|
+| Background-ul cu "MPS" de pe ecranul II (meniul) este facut de mine
+|
+| Mai sunt si fisierele cu cuvinte care provin pana la urma de pe dex.ro , prelucrate de mine apoi
+|
+|												 
+*__________<<_____*_____|_____*_____>>__________*
+===========================================================
+5.Alte detalii:
+*
+*	*voi mai adauga cateva chestii azi, le voi descrie pe scurt mai jos*
+*
+*
+* [ongoing-1] sunet la apasarea tuturor butoanelor
+*
+* [ongoing-2] folosirea unei litere o singura data in cadrul unui cuvant(slipped my mind somehow untill now)
+*
+* [thought process] folosirea unui background pentru ecranul III (cel cu jocul)
+*
+* [ongoing-3] ecranul cu statistici
+*
+*
+* 
+*	*voi pune tot proiectul dupa ce termin ce am zis mai sus , cred ca undeva pe la 7:30 - 8:00 in seara asta va fi gata
+*
+===========================================================
+                     <<END>>
+===========================================================
