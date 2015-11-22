@@ -1,5 +1,5 @@
 1. Will it work on every devices?
-   It doesn't work on Nexus 4 which has android 4.*. So this work on android 5.01 or bigger.
+   It doesn't work on Nexus 4 which has android 4.*. So this works on android 5.01 or bigger.
 
 2. Sound tests are perfect.
    Works instantly. 
@@ -13,15 +13,15 @@
 5. What does it show for clicking everyplace?
    It only has actions when you click exact buttons or labels.
 
-6. Nr.of letters < 4
-   It doesn't show me a warning when I enter less than 4 letters.
+6. Testing for Nr.of letters < 4
+   It doesn't show me a warning when I enter less than 4 letters.Instead shows me "wrong word"
 
 7. Very hard to find a word in each round.
    Letters are not well orginised.
 
 8. Didn't see the 54 faces of dice
    "In “Caruselul literelor” exista 9 “zaruri” cu cate 6 fete, pe fiecare fata este o litera. 
-   Jocul are astfel 9x6 = 54 de fete (adica 54 de litere)."
+   Jocul are astfel 9x6 = 54 de fete (adica 54 de litere)." Or me didn't understand well :-?
 
 9. 
    When time is up, showing the result (points) is good. But there is also
