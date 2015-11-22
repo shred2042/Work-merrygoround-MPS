@@ -1,5 +1,29 @@
-TODO
+1. Will it work on every devices?
+   It doesn't work on Nexus 4 which has android 4.*. So this work on android 5.01 or bigger.
 
-TODO
+2. Sound tests are perfect.
+   Works instantly. 
 
-TODO
+3. Some easy word tests 
+   Works...
+
+4. What does it show for clicking nothing and waiting?
+   It shows that "time is up"  so its good.
+
+5. What does it show for clicking everyplace?
+   It only has actions when you click exact buttons or labels.
+
+6. Nr.of letters < 4
+   It doesn't show me a warning when I enter less than 4 letters.
+
+7. Very hard to find a word in each round.
+   Letters are not well orginised.
+
+8. Didn't see the 54 faces of dice
+   "In “Caruselul literelor” exista 9 “zaruri” cu cate 6 fete, pe fiecare fata este o litera. 
+   Jocul are astfel 9x6 = 54 de fete (adica 54 de litere)."
+
+9. 
+   When time is up, showing the result (points) is good. But there is also
+   "Del" button which shouldn't show.
+
