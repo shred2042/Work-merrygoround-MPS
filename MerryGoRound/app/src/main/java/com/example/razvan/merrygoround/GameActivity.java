@@ -271,6 +271,10 @@ public class GameActivity extends Activity {
 
                 if(gameStage.equals("ready")){
                     //the games is just starting now
+
+                    del.setVisibility(View.VISIBLE);
+                    del.setClickable(true);
+
                     text.setText(old_text);
                     gameStage = "started";
                     wordsGuessed = new String[30];
@@ -333,11 +337,18 @@ public class GameActivity extends Activity {
                         }
                         else{
 
-                            if(!fraud) {
-                                text.setText("word " + word.getText().toString() + " does not exist ! Try again");
+                            if(word.getText().toString().length() < 4){
+                                text.setText("Word has to have length >= 4 ; Try again");
                             }
-                            else{
-                                text.setText("Already guessed that word. Try another one");
+
+                            else {
+
+                                if (!fraud) {
+                                    text.setText("word " + word.getText().toString() + " does not exist ! Try again");
+                                } else {
+                                    text.setText("Already guessed that word. Try another one");
+                                }
+
                             }
                             word.setText("");
 
@@ -358,6 +369,8 @@ public class GameActivity extends Activity {
                 if(gameStage.equals("ended")){
                     //the game just ended, show score etc
 
+                    del.setVisibility(View.INVISIBLE);
+                    del.setClickable(false);
 
                     String res = new String();
                     for(int i=0; i<words_idx-1; ++i){
