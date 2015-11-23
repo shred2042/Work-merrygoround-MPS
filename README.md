@@ -1,5 +1,6 @@
 # Work-merrygoround-MPS
-MPS Project 1
+
+MPS Project : Caruselul Literelor
 
 Members:
 
